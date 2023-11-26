@@ -158,18 +158,8 @@
   }
   
   .meta-link > span {
-    color: white;
+    color: #FBAE3C;
     transition: color 400ms;
-  }
-
-  #description{
-    color: rgba(36, 17, 10, 0.603);
-    font-size: 10vmin;
-    padding-top: 80px;
-    opacity: 0;
-    text-wrap: nowrap;
-    font-weight: 700;
-    animation-duration: 1s ease;
   }
 
   @keyframes fancyAnimation {
@@ -178,8 +168,8 @@
   }
 
   #description {
-    font-family: 'Courier New', monospace; /* Add this line */
-    color: rgba(36, 17, 10, 0.603);
+    font-family: 'Jetbrains Mono', monospace;
+    color: #FBAE3C;
     font-size: 10vmin;
     padding-top: 80px;
     opacity: 1;
@@ -200,6 +190,6 @@
 
   .letter {
     animation: letterAnimation 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    display: inline-block; /* Add this line */
+    display: inline-block;
     overflow: hidden;
   }
