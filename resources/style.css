@@ -93,7 +93,7 @@
   }
   
   #icon {
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(128, 128, 0, 0.329);
     font-size: 30vmin;
     opacity: 0;
     pointer-events: none;
@@ -113,7 +113,7 @@
   /* -- YouTube Link Styles -- */
   
   body.menu-toggled > .meta-link > span {
-    color: rgb(30, 30, 30);
+    color: rgb(255, 242, 242);
   }
   
   #source-link {
@@ -185,7 +185,7 @@
 
   @keyframes letterAnimation {
     0% { opacity: 0; transform: translateY(-50px); color: red; }
-    100% { opacity: 0.5; transform: translateY(0px); color: black; }
+    100% { opacity: 0.5; transform: translateY(0px); color: #fbc43a88; }
   }
 
   .letter {
