@@ -21,6 +21,7 @@ body {
   background: url(./bg.svg);
   height: 100vh;
   overflow: hidden;
+  background-size: 300vh;
   margin: 0px;
 }
 
