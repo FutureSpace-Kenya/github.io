@@ -94,7 +94,7 @@
   }
   
   #icon {
-    color: olive;
+    color: rgba(128, 128, 0, 0.438);
     font-size: 30vmin;
     opacity: 0;
     pointer-events: none;
