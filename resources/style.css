@@ -48,6 +48,9 @@ body.toggled {
   .dash{
     width: 100%;
   }
+  #title {
+    width: 80%;
+  }
 }
 
 body.toggled > #title {
