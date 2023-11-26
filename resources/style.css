@@ -64,7 +64,7 @@
   }
   
   .tile:hover:before {
-    background-color: rgb(30, 30, 30);
+    background-color: rgba(19, 18, 18, 0.829);
   }
   
   .tile:before {
@@ -93,7 +93,7 @@
   }
   
   #icon {
-    color: rgba(128, 128, 0, 0.329);
+    color: olive;
     font-size: 30vmin;
     opacity: 0;
     pointer-events: none;
