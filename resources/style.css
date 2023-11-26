@@ -34,12 +34,19 @@ body.toggled {
   background-size: cover;
 }
 
+.dash{
+  width: 600px;
+}
+
 /* Small screens media query */
 @media only screen and (max-width: 600px) {
   body.toggled {
     animation: none;
     background: url(./bg-sm.svg) center;
     background-size: cover;
+  }
+  .dash{
+    width: 100%;
   }
 }
 
