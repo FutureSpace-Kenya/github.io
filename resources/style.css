@@ -25,6 +25,10 @@ body {
   margin: 0px;
 }
 
+.mt{
+  margin-top: 100px;
+}
+
 body.toggled {
   animation: none;
   background-size: cover;
@@ -87,20 +91,23 @@ body.toggled > #tiles > .tile:hover {
 
 #title {
   color: white;
-  font-family: "Rubik", sans-serif;
-  font-size: 6vw;
+  font-size: 3vw;
   margin: 0px;
   pointer-events: none;
   transition: opacity 1200ms ease;
-  width: 50vw;
   z-index: 3;
+}
+
+.text{
+  margin-left: 34px;
+  font-weight: 700;
+  color: #fbae3c;
 }
 
 #title > .fancy {
   color: var(--g2);
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5em;
-  line-height: 0.9em;
+  font-size: 10px;
+  line-height: 0.7em;
 }
 
 #icon {
@@ -121,7 +128,6 @@ body.toggled > #tiles > .tile:hover {
   transform: rotate(-45deg);
 }
 
-/* -- YouTube Link Styles -- */
 
 body.menu-toggled > .meta-link > span {
   color: rgb(255, 242, 242);
