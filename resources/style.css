@@ -18,8 +18,11 @@
   body {
     animation: background-pan 10s linear infinite;
     font-family: 'Figtree', sans-serif;
-    background: url(./bg.svg);
-    background-size: 200%;
+    background: url(./bg.svg) center;
+    /* bg cover no repeat*/
+
+    
+    background-size: cover;
     height: 100vh;
     overflow: hidden;
     margin: 0px;
