@@ -18,7 +18,7 @@
 body {
   animation: background-pan 10s linear infinite;
   font-family: "Figtree", sans-serif;
-  background: url(./bg.svg);
+  background: url(../bg.svg);
   height: 100vh;
   overflow: hidden;
   background-size: 300vh;
@@ -42,7 +42,7 @@ body.toggled {
 @media only screen and (max-width: 600px) {
   body.toggled {
     animation: none;
-    background: url(./bg-sm.svg) center;
+    background: url(../bg-sm.svg) center;
     background-size: cover;
   }
   .dash{
@@ -127,11 +127,10 @@ body.toggled > #tiles > .tile:hover {
   pointer-events: none;
   transition: opacity 1200ms ease;
   z-index: 1;
-  transform: rotate(-45deg);
   top: 50%;
   left: 50%;
   position: fixed;
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .rotate {
@@ -207,7 +206,6 @@ body.menu-toggled > .meta-link > span {
   opacity: 1;
   text-wrap: nowrap;
   font-weight: 700;
-  animation-duration: 1s ease;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -236,17 +234,19 @@ body.menu-toggled > .meta-link > span {
 
 @keyframes moveRocket {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   50% {
-    transform: translateX(100px);
+    transform: translateY(100px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 .rocket {
   display: inline-block;
-  animation: moveRocket 2s linear infinite;
+  animation: moveRocket 2s ease-in-out infinite;
+  color: #fbae3c;
+  width: 200px;
 }
