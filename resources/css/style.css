@@ -6,10 +6,6 @@
     --g5: #001220;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 @keyframes background-pan {
     from {
         background-position: 0 center;
@@ -285,7 +281,6 @@ body.menu-toggled > .meta-link > span {
 .container {
     background: #0c0c0d;
     color: aliceblue;
-    padding: 20px;
     z-index: 20;
 }
 

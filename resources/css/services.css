@@ -38,7 +38,31 @@ body {
     grid-template-rows: repeat(2, 300px);
     grid-gap: 32px;
     position: relative;
+    /* center the grid */
+    margin: auto;
     z-index: 1;
+}
+
+.services-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(6, 300px);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 300px);
+    }
 }
 .card {
     background-color: var(--background-color);
