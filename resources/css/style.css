@@ -204,7 +204,7 @@ body.menu-toggled > .meta-link > span {
   font-size: 10vmin;
   padding-top: 80px;
   opacity: 1;
-  text-wrap: nowrap;
+  z-index: 1;
   font-weight: 700;
   transition: opacity 0.5s ease-in-out;
 }
