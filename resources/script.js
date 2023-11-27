@@ -102,4 +102,26 @@ const createGrid = () => {
 
 createGrid();
 
+let direction = true;
+let title = "🚀";
+let name = 'FutureSpace';
+let maxSpaces = 10;
+let currentSpaces = 0;
+
+setInterval(() => {
+  let spaces = "_".repeat(currentSpaces);
+  document.title = name+ spaces + title;
+
+  if (direction) {
+    currentSpaces++;
+    if (currentSpaces >= maxSpaces) {
+      direction = false;
+    }
+  } else {
+    currentSpaces--;
+    if (currentSpaces <= 0) {
+      direction = true;
+    }
+  }
+}, 500);
 window.onresize = () => createGrid();

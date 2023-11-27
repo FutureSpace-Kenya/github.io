@@ -233,3 +233,20 @@ body.menu-toggled > .meta-link > span {
   display: inline-block;
   overflow: hidden;
 }
+
+@keyframes moveRocket {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.rocket {
+  display: inline-block;
+  animation: moveRocket 2s linear infinite;
+}
