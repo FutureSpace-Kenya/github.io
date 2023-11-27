@@ -279,7 +279,7 @@ body.menu-toggled > .meta-link > span {
 /*About page*/
 
 .about {
-    background: #0f0f0f;
+    background: #0c0c0d;
     color: aliceblue;
     padding: 50px clamp(10px, 5vw, 50px);
   z-index: 20;
@@ -305,7 +305,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 :root {
-    --card-height: 500px;
+    --card-height: 400px;
     --card-width: calc(var(--card-height) / 1.5);
 }
 
@@ -317,9 +317,10 @@ body.menu-toggled > .meta-link > span {
     width: 100%;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    background: #191c29;
 }
 
 .card {
@@ -350,6 +351,7 @@ body.menu-toggled > .meta-link > span {
 .card:hover .wrapper {
     transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
     box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    opacity: 0.3;
     -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
@@ -403,6 +405,7 @@ body.menu-toggled > .meta-link > span {
 
 .card:hover .title {
     transform: translate3d(0%, -50px, 100px);
+    opacity: 0.5;
 }
 
 .character {
@@ -415,6 +418,8 @@ body.menu-toggled > .meta-link > span {
 
 .card:hover .character {
     opacity: 1;
-    transform: translate3d(0%, -3%, 100px);
+    transform: translate3d(0%, -1%, 100px);
 }
 
+.character-title{
+}
