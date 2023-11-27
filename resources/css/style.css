@@ -16,20 +16,25 @@
 }
 
 body {
-  animation: background-pan 10s linear infinite;
   font-family: "Figtree", sans-serif;
-  background: url(../bg.svg);
+  margin: 0;
   height: 100vh;
-  overflow: hidden;
+}
+
+#page-wrapper {
+  animation: background-pan 10s linear infinite;
+  background: url(../bg.svg);
   background-size: 300vh;
-  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .mt{
   margin-top: 100px;
 }
 
-body.toggled {
+#page-wrapper.toggled {
   animation: none;
   background-size: cover;
 }
@@ -38,9 +43,21 @@ body.toggled {
   width: 600px;
 }
 
+@keyframes moveRocketSm {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Small screens media query */
 @media only screen and (max-width: 600px) {
-  body.toggled {
+  #page-wrapper.toggled {
     animation: none;
     background: url(../bg-sm.svg) center;
     background-size: cover;
@@ -48,20 +65,26 @@ body.toggled {
   .dash{
     width: 100%;
   }
+
+  .rocket{
+    width: 100px !important;
+    animation: moveRocketSm 2s ease-in-out infinite !important;
+  }
+
   #title {
     width: 80%;
   }
 }
 
-body.toggled > #title {
+#page-wrapper.toggled > #title {
   opacity: 0;
 }
 
-body.toggled > #icon {
+#page-wrapper.toggled > #icon {
   opacity: 1;
 }
 
-body.toggled > #tiles > .tile:hover {
+#page-wrapper.toggled > #tiles > .tile:hover {
   opacity: 0.1 !important;
 }
 
@@ -95,7 +118,7 @@ body.toggled > #tiles > .tile:hover {
 .tile:before {
   background-color: rgb(15, 15, 15);
   content: "";
-  inset: 0.5px;
+  inset: 1px;
   position: absolute;
 }
 
@@ -237,7 +260,7 @@ body.menu-toggled > .meta-link > span {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(100px);
+    transform: translateY(-100px);
   }
   100% {
     transform: translateY(0);
