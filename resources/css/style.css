@@ -289,6 +289,11 @@ body.menu-toggled > .meta-link > span {
     z-index: 20;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
