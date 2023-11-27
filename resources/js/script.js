@@ -106,3 +106,28 @@ setInterval(() => {
     currentSpaces = (currentSpaces <= 0) ? (direction = true, 0) : currentSpaces - 1;
   }
 }, 500);
+
+document.addEventListener('mousemove', function(e) {
+  const cursor = document.getElementById('customCursor');
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+const cards = document.querySelectorAll('.card');
+let cursor = document.getElementById('customCursor');
+
+cards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    // Change cursor style or add effects when hovering over a card
+    cursor.style.transform = 'scale(2)';
+    cursor.style.backdropFilter = 'blur(5px)';
+    cursor.style.opacity = '0.1';
+  });
+
+  card.addEventListener('mouseleave', () => {
+    // Revert cursor style when not hovering over a card
+    cursor.style.transform = 'scale(1)'; // Revert effect
+    cursor.style.backdropFilter = 'blur(0px)'; // Revert effect
+    cursor.style.opacity = '1'; // Revert effect
+  });
+});

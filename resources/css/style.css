@@ -283,6 +283,29 @@ body.menu-toggled > .meta-link > span {
     color: aliceblue;
     z-index: 20;
 }
+/* Custom cursor */
+@media only screen and (min-width: 600px){
+    #customCursor {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fbae3c;
+        border: 1px solid #fbae3c;
+        position: fixed;
+        pointer-events: none; /* Important to allow click events to pass through */
+        z-index: 1000;
+        /* Add more styling as needed */
+    }
+
+    .card {
+        transition: filter 0.7s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+}
+
 
 .center {
     display: flex;
