@@ -34,7 +34,7 @@ body {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(2, 300px);
     grid-gap: 32px;
     position: relative;
@@ -79,6 +79,17 @@ body {
 
     .grid2{
         grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(3, 300px);
+    }
+
+    .grid2{
+        grid-template-columns: repeat(3, 300px);
     }
 }
 .card {
