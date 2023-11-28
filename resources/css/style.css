@@ -149,7 +149,7 @@ body {
 #icon {
     color: rgba(128, 128, 0, 0.438);
     font-size: 30vmin;
-    opacity: 0;
+    opacity: 0.2;
     pointer-events: none;
     transition: opacity 1200ms ease;
     z-index: 1;
@@ -229,7 +229,7 @@ body.menu-toggled > .meta-link > span {
     color: #fbae3c;
     font-size: 10vmin;
     padding-top: 80px;
-    opacity: 1;
+    opacity: 0;
     z-index: 1;
     font-weight: 700;
     transition: opacity 0.5s ease-in-out;
