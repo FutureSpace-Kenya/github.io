@@ -65,7 +65,7 @@ body {
     }
 }
 .card {
-    background-color: var(--background-color);
+    background-color: #18181bd4;
     box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
     padding: 26px 16px 16px 16px;
     border-radius: 15px;
