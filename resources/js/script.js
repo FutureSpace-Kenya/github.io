@@ -116,6 +116,7 @@ document.addEventListener('mousemove', function(e) {
 const cards = document.querySelectorAll('.card');
 let cursor = document.getElementById('customCursor');
 
+
 cards.forEach(card => {
   card.addEventListener('mouseenter', () => {
     // Change cursor style or add effects when hovering over a card
