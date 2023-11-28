@@ -311,7 +311,9 @@ body.menu-toggled > .meta-link > span {
 .center {
     display: flex;
     justify-content: center;
+    font-size: 2rem;
     align-items: center;
+    margin-top: 50px;
 }
 
 /* Scrollbar styles */
