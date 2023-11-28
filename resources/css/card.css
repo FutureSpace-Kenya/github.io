@@ -4,14 +4,12 @@ align-items: center;
 flex-direction: column;
 padding: 3rem;
 max-width: 300px;
-background-color: #1b2028;
 border-radius: 16px;
 position: relative;
 border: 3px solid transparent;
 background-clip: padding-box;
 text-align: center;
 color: #f1f3f3;
-background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74, 88, 0.1) 15%, #1b2028 20%, #1b2028 100%);
 }
 
 .profile-container{
@@ -21,16 +19,7 @@ background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74
     justify-content: center;
 }
 .profile:after {
-    content: "";
-    display: block;
-    top: -3px;
-    left: -3px;
-    bottom: -3px;
-    right: -3px;
-    z-index: -1;
     position: absolute;
-    border-radius: 16px;
-    background-image: linear-gradient(135deg, #752e7c, #734a58 20%, #1b2028 30%, #2c333e 100%);
 }
 .profile-image {
     border-radius: 50%;
@@ -62,28 +51,6 @@ background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74
 }
 .profile-actions > * {
     margin: 0 0.25rem;
-}
-.btn {
-    border: 0;
-    background-color: transparent;
-    padding: 0;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    line-height: 1;
-    transition: 0.15s ease;
-}
-.btn--primary {
-    border-radius: 99em;
-    background-color: #3772ff;
-    background-image: linear-gradient(135deg, #5587ff, #3772ff);
-    color: #fff;
-    padding: 0 1.375em;
-}
-.btn--primary:hover, .btn--primary:focus {
-    background-size: 150%;
 }
 .btn--icon {
     height: 46px;
