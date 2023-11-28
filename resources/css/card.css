@@ -27,6 +27,7 @@ color: #f1f3f3;
     width: 175px;
     height: 175px;
     position: relative;
+    border: 5px solid rgba(255,255,255,0.15);
 }
 .profile-image img {
     position: absolute;
