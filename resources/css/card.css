@@ -19,7 +19,6 @@ background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 .profile:after {
     content: "";

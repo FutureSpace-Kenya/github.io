@@ -43,6 +43,15 @@ body {
     z-index: 1;
 }
 
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 32px;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+}
+
 .services-body{
     display: flex;
     flex-direction: column;
@@ -53,8 +62,12 @@ body {
 
 @media only screen and (max-width: 600px) {
     .grid {
-        grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(6, 300px);
+        grid-template-columns: repeat(1, 320px);
+        grid-template-rows: repeat(6, 320px);
+    }
+
+    .grid2{
+        grid-template-columns: repeat(1, 320px);
     }
 }
 
