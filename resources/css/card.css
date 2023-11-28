@@ -3,7 +3,6 @@ display: flex;
 align-items: center;
 flex-direction: column;
 padding: 3rem;
-width: 90%;
 max-width: 300px;
 background-color: #1b2028;
 border-radius: 16px;
