@@ -268,9 +268,6 @@ i:hover {
     height: 22.5%;
     width: 22.5%;
 }
-
-
-
 @keyframes tile {
     0%, 12.5%, 100% {
         opacity: 1;
@@ -338,7 +335,6 @@ i:hover {
 .card .background .line.line-5:before{
     top: 98%;
 }
-
 .card:hover {
     box-shadow: 0px 3px 6px var(--card-hover-box-shadow-1), 0px var(--card-hover-box-shadow-2-y) var(--card-hover-box-shadow-2-blur) var(--card-hover-box-shadow-2), 0 0 0 1px var(--card-hover-border-color);
 }
@@ -349,7 +345,6 @@ i:hover {
 .card:hover .icon svg {
     color: var(--card-hover-icon-color);
 }
-
 .card:hover .shine {
     opacity: 1;
     transition-duration: 0.5s;
@@ -372,7 +367,6 @@ i:hover {
 .card:hover .background .line:after {
     transform: scaleY(1);
 }
-
 .card:hover .background .line.line-1:before, .card:hover .background .line.line-1:after {
     transition-delay: 0s;
 }
@@ -382,19 +376,6 @@ i:hover {
 .card:hover .background .line.line-3:before, .card:hover .background .line.line-3:after {
     transition-delay: 0.3s;
 }
-
-.card:hover .background .line.line-4:before, .card:hover .background .line.line-4:after {
-    transition-delay: 0.45s;
-}
-
-.card:hover .background .line.line-5:before, .card:hover .background .line.line-5:after {
-    transition-delay: 0.6s;
-}
-
-.card:hover .background .line.line-6:before, .card:hover .background .line.line-6:after {
-    transition-delay: 0.75s;
-}
-
 .service-body {
     min-height: 100vh;
     display: flex;
