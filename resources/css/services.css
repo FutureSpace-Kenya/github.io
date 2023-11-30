@@ -364,7 +364,7 @@ i:hover {
     top: 77.5%;
 }
 .card .background .line.line-5:before{
-    top: 98%;
+    top: 100%;
 }
 .card:hover {
     box-shadow: 0px 3px 6px var(--card-hover-box-shadow-1), 0px var(--card-hover-box-shadow-2-y) var(--card-hover-box-shadow-2-blur) var(--card-hover-box-shadow-2), 0 0 0 1px var(--card-hover-border-color);
