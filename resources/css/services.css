@@ -208,6 +208,20 @@ i:hover {
 .card .background .tiles .tile.tile-2, .card .background .tiles .tile.tile-9 {
     animation-delay: -6s;
 }
+
+.card .background .tiles .tile.tile-11, .card .background .tiles .tile.tile-13 {
+    animation-delay: -8s;
+}
+
+.card:hover .background .tiles .tile.tile-11,
+.card:hover .background .tiles .tile.tile-12,
+.card:hover .background .tiles .tile.tile-13,
+.card:hover .background .tiles .tile.tile-14,
+.card:hover .background .tiles .tile.tile-15,
+.card:hover .background .tiles .tile.tile-16 {
+    animation-name: tile;
+}
+
 .card .background .tiles .tile.tile-1 {
     top: 0;
     left: 0;
@@ -268,6 +282,23 @@ i:hover {
     height: 22.5%;
     width: 22.5%;
 }
+
+.card .background .tiles .tile.tile-11 {
+    top: 55%;
+    left: 0;
+    height: 22.5%;
+    width: 22.5%;
+}
+
+
+.card .background .tiles .tile.tile-12 {
+    top: 77.5%;
+    left: 50%;
+    height: 22.5%;
+    width: 27.5%;
+}
+
+
 @keyframes tile {
     0%, 12.5%, 100% {
         opacity: 1;
