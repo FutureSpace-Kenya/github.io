@@ -344,3 +344,29 @@ body.menu-toggled > .meta-link > span {
     justify-content: center;
     align-items: center;
 }
+
+.images {
+    position: relative;
+    display: table;
+    padding: 8px;
+    margin-bottom: 30px;
+}
+
+.images img {
+    position: absolute;
+    width: 40px !important;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.37);
+}
+
+.image1 {
+    z-index: 1;
+    margin-right: 20px;
+    left: 30px !important;
+}
+
+.image2 {
+    z-index: 2;
+}
