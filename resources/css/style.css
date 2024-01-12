@@ -404,3 +404,101 @@ body.menu-toggled > .meta-link > span {
 .image2 {
     z-index: 2;
 }
+
+/*Tailwind CSS*/
+
+.m{
+    margin: 10px;
+}
+
+.mt{
+    margin-top: 10px;
+}
+
+.mb{
+    margin-bottom: 10px;
+}
+
+.ml{
+    margin-left: 10px;
+}
+
+.mr{
+    margin-right: 10px;
+}
+
+.mx{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.my{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p{
+    padding: 10px;
+}
+
+.pt{
+    padding-top: 10px;
+}
+
+.pb{
+    padding-bottom: 10px;
+}
+
+.pl{
+    padding-left: 10px;
+}
+
+.pr{
+    padding-right: 10px;
+}
+
+.px{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.py{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*-- Contact --*/
+
+.contact{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-icon{
+    font-size: 1.5rem;
+    color: #fbae3c;
+    border: 2px solid #fbae3c;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-info h4{
+    font-weight: 500;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.w-full{
+    width: 100% !important;
+}
