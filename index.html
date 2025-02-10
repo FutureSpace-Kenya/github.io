@@ -351,7 +351,7 @@
                     </svg>
                 </div>
                 <h2 class="profile-username">Next Dev</h2>
-                <small class="profile-user-handle">Willing to join Us?</small>
+                <small class="profile-user-handle">Ready to join Us? contact us</small>
                 <div class="profile-links">
                     <a href="https://x.com/raccoon254" class="link link--icon">
                         <i class="fa-brands fa-twitter"></i>
@@ -371,72 +371,211 @@
 <div class="container profile-container about">
     <h2 class="center meet-us">Talk with real people</h2>
     <section class="team">
-
-
         <div class="card map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d11284.73497262104!2d37.663075546117476!3d-0.319439331865692!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1701380740231!5m2!1sen!2ske"
                     height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+    </section>
 
-
-        <div class="">
-            <!-- Card 1: Technical Support -->
-            <div class="card w-full">
-                <span class="images">
-                    <img src="./resources/images/ken.jpg" alt="Image 1" class="image1">
-                    <img src="./resources/images/kingb2.jpg" alt="Image 2" class="image2">
-                </span>
-                <h4 class="mb"> Tech Support</h4>
-
-                <p class="mt">
-                    We are here to help you with any technical issues you may have. We are available 24/7.
-                </p>
-
-                <div class="contact">
-                    <div class="contact-icon">
-                        <i class="fa fa-phone"></i>
+    <section style="background: transparent" class="team">
+        <!-- Card 1: Technical Support -->
+        <div style="width: 100% !important;" class="">
+            <div class="contact-section">
+                <!-- Technical Support Card -->
+                <div class="contact-card">
+                    <div class="contact-images">
+                        <img src="./resources/images/ken.jpg" alt="Support Team Member 1" class="contact-image">
+                        <img src="./resources/images/kingb2.jpg" alt="Support Team Member 2" class="contact-image">
                     </div>
-                    <div class="contact-info">
-                        <table class="contact-table">
-                            <tr>
-                                <td>+254 703 371 828</td>
-                                <td>Brian K</td>
-                            </tr>
-                            <tr>
-                                <td>+254 758 481 320</td>
-                                <td>Steve T</td>
-                            </tr>
-                        </table>
+
+                    <h4 class="contact-title">Technical Support</h4>
+                    <p class="contact-description">
+                        Our dedicated support team is available 24/7 to assist you with any technical issues. Reach out to us anytime!
+                    </p>
+
+                    <div class="contact-details">
+                        <a href="tel:+254703371828"
+                           class="contact-item">
+                            <i class="fa fa-phone contact-icon"></i>
+                            <span class="contact-text">+254 703 371 828 - Brian K</span>
+                        </a>
+                        <a href="tel:+254758481320"
+                           class="contact-item">
+                            <i class="fa fa-phone contact-icon"></i>
+                            <span class="contact-text">+254 758 481 320 - Steve T</span>
+                        </a>
                     </div>
-                </div>
-
-                <div>
-
-                </div>
-                <div class="shine"></div>
-                <div class="background">
-                    <div class="tiles">
-                        <div class="tile tile-1"></div>
-                        <div class="tile tile-2"></div>
-                        <div class="tile tile-3"></div>
-                        <div class="tile tile-4"></div>
-
-                        <div class="tile tile-5"></div>
-                        <div class="tile tile-6"></div>
-                        <div class="tile tile-7"></div>
-                        <div class="tile tile-8"></div>
-
-                        <div class="tile tile-9"></div>
-                        <div class="tile tile-10"></div>
-                    </div>
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                    <div class="line line-4"></div>
-                    <div class="line line-5"></div>
                 </div>
             </div>
+
+            <style>
+                /* Enhanced CSS with Animations for Dark Theme */
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+
+                @keyframes pulse {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.05); }
+                    100% { transform: scale(1); }
+                }
+
+                @keyframes borderGlow {
+                    0% { border-color: #007bff; }
+                    50% { border-color: #00ff88; }
+                    100% { border-color: #007bff; }
+                }
+
+                body {
+                    background-color: #1e1e24; /* Dark theme background */
+                    color: #fff; /* Default text color */
+                }
+
+                .contact-section {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem 6rem;
+                    background-color: #1e1e24; /* Dark theme background */
+                }
+
+                .contact-card {
+                    border-radius: 20px;
+                    padding: 2rem;
+                    width: 100%;
+                    max-width: 970px; /* Fixed width for big devices */
+                    text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                    animation: fadeIn 0.8s ease-out;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .contact-card:hover {
+                    transform: translateY(-5px);
+                }
+
+                @keyframes rotate {
+                    100% { transform: rotate(360deg); }
+                }
+
+                .contact-images {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .contact-image {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 4px solid #2a2a32; /* Dark border */
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    animation: pulse 2s ease-in-out infinite;
+                }
+
+                .contact-image:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 6px 20px rgba(1, 20, 41, 0.3);
+                    animation: none;
+                }
+
+                .contact-title {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: transparent;
+                    background: linear-gradient(45deg, #007bff, #00b8ff);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    margin-bottom: 1rem;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .contact-description {
+                    font-size: 1rem;
+                    color: #a0a0a0; /* Light gray for readability */
+                    line-height: 1.6;
+                    margin-bottom: 2rem;
+                    position: relative;
+                    z-index: 2;
+                    transition: color 0.3s ease;
+                }
+
+                .contact-details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                .contact-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    padding: 0.8rem 1.5rem;
+                    background: rgba(0, 123, 255, 0.1);
+                    border-radius: 50px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+
+                .contact-item:hover {
+                    background: rgba(0, 123, 255, 0.2);
+                    transform: translateX(10px);
+                }
+
+                .contact-icon {
+                    font-size: 1.5rem;
+                    color: #007bff;
+                    animation: pulse 1.5s ease-in-out infinite;
+                    border: none;
+                }
+
+                .contact-text {
+                    font-size: 1rem;
+                    color: #fff; /* White text for better contrast */
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+                }
+
+                /* Responsive Design */
+                @media (max-width: 768px) {
+                    .contact-card {
+                        width: 90%;
+                        padding: 1.5rem;
+                    }
+
+                    .contact-image {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    .contact-title {
+                        font-size: 1.5rem;
+                    }
+
+                    .contact-text {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                @media (min-width: 1200px) {
+                    .contact-card {
+                        width: 970px; /* Fixed width for big devices */
+                    }
+                }
+            </style>
         </div>
     </section>
 </div>
